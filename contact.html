@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/styles_contact.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap" rel="stylesheet">
+    <title>Rent Daily</title>
+  </head>
+  <body>
+    
+    
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+          <a class="navbar-brand" href="#">Rent Daily</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 ">
+              <div class="menu-bar">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 ">
+                  <li class="active"><a href="index.html">Home</a><i class="fa fa-home" aria-hidden="true"></i></li>
+          <li > <a href="booking.html"> Booking</a><i class="fa fa-book" aria-hidden="true"></i></li>
+          <li > <a href="about.html">About </a><i class="fa fa-users" aria-hidden="true"></i></i></li>
+          <li > <a href="contact.html"> Contact</a><i class="fa fa-phone" aria-hidden="true"></i></li>
+                </ul>
+                </div>
+            <form class="d-flex">
+              <input class=" px-2 search" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn0 " type="submit">Search</button>
+            </form>
+            <div class="fixed-top">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Logout</button>
+            </div>
+    
+          </div>
+        </div>  
+      </nav>
+      <div class="latestNewsWrapper">
+        <strong>
+          <span class="letestNewsTag">Latest New ►► &nbsp;</span>
+        </strong>
+        <span class="latestNewsDescription">Updared Soon!!!</span>
+      </div>
+    </header>
+
+    <!--Body Main Content-->
+    <main>
+
+      <!--Section 1-->
+      <section class="section1">
+        <div class="sectionHeadingWrapper">
+          <h3 class="sectionHeading">Contact with us</h3>
+        </div>
+      </section>
+
+      <!--Section 2-->
+      <section class="section2">
+        <div class="contactDetailsWrapper">
+          <div class="contactDetails">
+            <p class="contact">Address: India</p>
+            <p class="contact">Phone: (+91) 9999999999</p>
+            <p class="contact">Mail: sk@gmail.com</p>
+            <p class="contact">Website: www.skyc.ml</p>
+          </div>
+        </div>
+      </section>
+
+      <!--Section 3-->
+      <section class="section3">
+        <h4>Submit your query</h4>
+        <div class="queryWrapper">
+          <form action="contact.html">
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Full Name</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name Last Name"name="name">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"name="mail">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Phone Number</label>
+              <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="9999999999"name="phno">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Your Query</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Write your query here" rows="5"name="query"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <!--Footer-->
+   
+
+      <!--Modal-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Logout</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body d-flex">
+              <div class="makeOneSec">
+                <p class="makeOneTxt text-center">Logout</p>
+                <div class="forbtn mt-2">
+                  <a type="button"  href="front.html"class="btn btn-primary text-center" target="_blank" onclick="logout()">Logout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+</body>
+
+
+     
+
+
+  
+<footer>
+  <p class="footertext">Copyright &copy; 2022 Rent Daily. All right reserver and other such importent stuff</p>
+</footer>
+
+    <!--Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Logout</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body d-flex">
+            <div class="makeOneSec">
+              <p class="makeOneTxt text-center">Logout</p>
+              <div class="forbtn mt-2">
+                <a type="button"  href="front.html"class="btn btn-primary text-center" onclick="logout()">Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+  
+  <script>
+    function logout(){
+      alert("Your session will discontinue!")
+    }
+  </script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+</html>
